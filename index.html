@@ -1,68 +1,245 @@
-<! DOCTYPE html>
-<html>
-    
-<head>
-    <title>Jessica Liu's Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-    
-<body>
-    <header>
-    <h1>Jessica Liu</h1>
-        <p><b>Phone number:</b> (703) 456-7891</p>
-        <p><b>Email:</b> liu7jx@dukes.jmu.edu</p>
-    </header>
-   
-<section>
-    <h2>Education</h2>
-    <h4><b>James Madison University</b> (Harrisonburg, VA)</h4>
-        <ul>
-        <li>B.A.with Double Major in Public Relations and Interactive Design - Expected December 2021</li>
-        </ul>
-    
-    <h2>Experience</h2>
-    <h4>Social Media Assistant (San Francisco, CA)</h4>
-        <ul>
-            <p><i>So She Slays</i> - July to August 2019</p>
-            <li>Assisted VP in Strategic Content with social media</li>
-            <li>Promoted blog's lifestyle platform to 600,000 followers</li>
-             <p><a href="https://www.sosheslays.com/"target="_blank"> Website </a></p>
-        </ul>
-    <h4>Cashier for Thai Breakers (Washington, D.C.)</h4>
-        <ul>
-            <p><i>Citi Open Tennis Tournament</i> - August 2018</p>
-            <li>Provided food service at a register to over 70,000 attendees at the tournament</li>
-            <p><a href="https://www.citiopentennis.com/"target="_blank"> Website </a></p>
-        </ul>
-    <h4>Front of House Team Member (Fairfax, VA)</h4>
-        <ul>
-            <p><i>Corner Bakery Cafe</i> - March to July 2017</p>
-            <li>Served customers food and beverage to establish great customer service</li>
-            <p><a href="https://www.cornerbakerycafe.com/"target="_blank"> Website </a></p>
-        </ul>
-    
-    <h2>Leadership</h2>
-    <h4>Artistic Director For Mozaic Dance Team (Harrisonburg, VA)</h4>
-        <ul>
-        <p><i>James Madison University</i> - February 2019 to February 2020</p>
-            <li>Prepared team for competitions and major dance showcases like Coalescence, with a turnout of 500 or more people each year  </li>
-            <li>Conducted weekly dance practices to teach choreography</li>
-            <li>Participated in team collaboration and creativity</li>
-        </ul>
-    <h4>Historian for Filipino Americans at Madison (Harrisonburg, VA)</h4>
-        <ul>
-        <p><i>James Madison University</i> - April 2018 to May 2019</p>
-            <li>Produced video content for 200 members from the organization</li>
-            <li>Kept records of club's accomplishments with pictures and video</li>
-        </ul>
-    
-    <h2>Skills</h2>
-            <p><b>Language Skills:</b> Fluent in English and Mandarin Chinese</p>
-        <p><b>Computer Skills:</b> Knowledge of HTML, CSS, Adobe Photoshop, Adobe Illustrator, Final Cut Pro, iMovie</p>
-        <p><b>Customer Service Certfied:</b> W!se Financial Literacy certified</p>
-    
-</section>
-    
-</body>
-    
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+         <meta charset = "UTF-8">
+        <title> App Flow Redesign </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel ="stylesheet" href="stylesheet.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300&display=swap" rel="stylesheet">
+        <style>
+            html {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            *,*:before, *after {
+                -webkit-box-sizing: inherit;
+                -moz-box-sizing: inherit;
+                box-sizing: inherit;
+            }
+            body {
+                margin: 0;
+            }  
+            .container {
+                display:grid;
+                grid-template-columns:repeat(12, 1fr); 
+                grid-auto-rows:minmax(30px, auto);
+                margin:0 auto;
+                max-width:1440px;
+            }
+            nav {
+                grid-column:1/13;
+            }
+            nav ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-image:url(images/nav.jpg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            nav li {
+                float: right;
+            }
+            nav li a {
+                display: inline-block;
+                text-align: center;
+                padding-top: 1.85em;
+                padding-left: 1.5em;
+                padding-bottom: 1em;
+                text-decoration: none;
+                transition: .7s ease;
+                color: #151515;
+            }
+            nav li a:hover{
+                text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                color: #2884cf;
+            }
+            .image-cover {
+                grid-column:1/13;
+                opacity: 1;
+                backface-visibility: hidden;
+                transition: .5s ease;
+            }
+            .image-cover:hover {
+                opacity: 0.9;
+            }
+            section {
+                grid-column: 1/13;
+                padding: 15px 150px;
+                background-color: #fefffa;
+            }
+            .section2 {
+                grid-column: 1/13;
+                padding: 15px 150px;
+                background-color: #fefffa;
+            }
+            .section3 {
+                grid-column: 1/13;
+                padding: 15px 150px;
+                background-color: #fefffa;
+            }
+            .section4 {
+                grid-column: 1/13;
+                padding: 15px 150px;
+                background-color: #fefffa;
+            }
+            .section5 {
+                grid-column: 1/13;
+                padding: 15px 150px;
+                background-color: #fefffa;
+            }
+            .section6 {
+                grid-column: 1/13;
+                padding: 15px 150px;
+                background-color: #fefffa;
+            }
+            .section7 {
+                grid-column: 1/13;
+                padding: 15px 150px;
+                background-color: #fefffa;
+            }
+            .help{
+                grid-column:1/13;
+                background-color: #fefffa;
+            }
+            .social{
+                grid-column:1/13;
+                background-color: #fefffa;
+            }
+            footer {
+                grid-column:1/13;
+                background-color: #fefffa;
+            }
+            .padding-footer {
+                padding-left: 14em;
+                padding-right: 2em;
+                padding-top: 20px;
+                text-align: center;
+            }
+            .image-align {
+                margin-left: 0px;
+            }
+            a:link, a:visited {
+                color: #151515;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #2884cf;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <nav>
+            <ul>
+                <li><a href="index.html">App Flow Redesign</a></li>
+            </ul> 
+          </nav>
+          <div class ="image-cover">
+             <a target="_blank" href="https://www.instagram.com/"><img src="images/cover.png" alt="Page Cover Image">
+             </a>
+          </div>
+          <section>
+          <h1> Redesigning the User Interface of the Instagram App - a UX case study </h1> 
+          <img class="image-align" src="images/profile.jpg" alt="Profile Pic">
+          <br>
+          <p style="color: gray;"> Written by: Jessica Liu <br>
+              Last Updated: January 31, 2021 </p>
+          </section>
+          <div class="section2">
+              <p> In today's world, everyone has access to digital technology, including mobile and web applications. Many individuals rely on well done user interface designs in order to simplify and improve their user experience.
+              <br>
+              <br>
+              <b>Instagram</b> is a popular media sharing and social networking app available on mobile devices and desktop. Since its launch in 2010, the app has gone through many changes, including its most drastic update in November 2020. This new makeover has left many long term users upset. Due to the new changes in navigation, many users have no choice but to adjust to the new features over time.
+              </p>
+          </div>
+          <div class="section3">
+          <h1> Identifying the users and their goals</h1>
+              <br> 
+               <figure>
+                <img src="images/users.jpg" alt="Instagram Users">
+                <br>
+              </figure>
+              <p> The <b>primary users</b> of Instagram often consist of individuals who are under the age of 35. Many of these users are most likely to be active on other social networking apps like Tiktok, Facebook, and Twitter. 
+              <br> 
+              <br>
+              The <b>goals</b> of Instagram users are: 
+              </p>
+              <ul>
+                <li> Posting content</li>
+                <li> Sending and receiving messages</li>
+                <li> Selling products/services
+                <li> Influencing audiences</li>
+                <li> Receiving information</li>
+              </ul>
+          </div>
+          <div class="section4">
+          <h1> App Analysis </h1>
+           <figure>
+                <img src="images/instatimeline.png" alt="Timeline">
+                <br>
+                <figcaption>Instagram Update Timeline</figcaption>
+              </figure>   
+              <p> This analysis will focus mainly on the story elements of Instagram. The biggest change from the 2020 Instagram update is the new placement of the media button, where users can post their content, stories, etc. In the older versions, Instagram always had their media button placed on the bottom center of the page. Since then, the reels button has taken over that spot and the media button has made it's way to the top right corner.  </p>
+              <figure>
+                <img src="images/app1.png" alt="Application">
+                <br>
+                <figcaption>Posting a Story</figcaption>
+              </figure>
+              <p> When deciding to post a story on Instagram, there are many ways to do so on the app. First, individuals can swipe right to get to the media page right when they open their home screen. The second option is locating the media button on the far right corner. The third option allows users to click on their profile picture to "Add Story" (not pictured). Providing multiple ways to post a story can be helpful for users. However, it can be confusing for new users or inactive users at first. Once you get on the media page, you can adjust which type of media you want to use at the bottom swipe bar. The swipe bar is noticeable small and hard to see. To click for content, users need to click on the picture box on the bottom left, which is also hard to locate at first glance. </p>
+        
+              <figure>
+                <img src="images/app2.png" alt="Screen Computer">
+                <br>
+              <figcaption> Instagram Story Settings </figcaption>
+              </figure>
+              <p> After you click on the picture box, you'll be able to choose content from the last 24 hours or you can select a different album to choose from.</p>
+        <br>
+        <br>
+        <h1> Design Problem Statement </h1>
+             <p> Noticing the minor flaws in Instagram's story options, we can conclude that the main <b>pain point</b> of this app is that users need to adjust themselves to new navigation from the new Instagram update. </p>
+             <p> <b>Design Question</b>: <em>"How might we simplify the user experience of posting a story on Instagram?"</em>
+             </p>
+             <figure>
+                <img src="images/instagramstory.jpg" alt="Instagram Story Pain Point">
+                <br>
+                <figcaption> Paint Points: Users have to get used to the new story button placements, media swipe bar is hard to spot, and the album select button is unclear </figcaption>
+             </figure>
+        </div>
+        <div class="section5">
+        <h1> User Research </h1>
+              <p>For this case study, I conducted ten interviews and had five users walk me through their thinking process as they opened the Instagram app and posted a story. </p>
+                <blockquote><p><em>"It's hard noticing the bottom slider once you click on the media button. I wish it was either higher or a little bigger." - Daniel John</em></p></blockquote>
+              <p> The first thing I acknowledged was the noticeable difference between active Instagram users and inactive Instagram users. Active Instagram users didn't have a lot of trouble completing the task. However, active users noted that using the app's updated version was complicated at first, but after posting more they eventually got used to everything. On the otherhand, the inactive users had to play around more to reach the actual destination. Once they found the media button, users barely noticed the media swipe bar at the bottom. 
+            <blockquote><p><em> "Last 24 Hours doesn't really help indicate anything. I don't really know why it's there." - Jamie Lee</em></p></blockquote>
+              <p> Another feature that stood out was the select button that said "Last 24 Hours". A couple users preferred the button to say "Recents" or "Select" to make it more straightforward. </p> 
+        </div>
+        <div class="section6">
+        <h1> The Solution </h1>
+              <p> Based on participant feedback and interview highlights, I created an improved story design for Instagram to provide its users an easier way to post a story. </p>
+              <h2> Enlarged Media Swipe Bar and Modified Select Button </h2>
+              <figure>
+               <img src="images/solution.png" alt="Solution">
+               <br>
+              </figure>
+              <p>This new design slightly adjusts Instagram's current design by making the media swipe bar more noticeable to its users. Although small, this new adjustment solves a big problem by simplifying the process of finding the media swipe bar for new or inactive users. </p>
+            
+              <p>The modified select button matches the iPhone "Recents" album, making it easier to know what the button is intended for.</p>
+          </div>
+          <div class="section7">
+            <h1> A Thank You Note </h1>
+              <p> Thank you for taking the time to read this UX Case Study. I would love to hear any feedback or questions from you, so feel free to contact me by <a href="mailto:liu7jx@dukes.jmu.edu" style="color: rebeccapurple; text-decoration: none"> email </a>. This App Flow Redesign project was created in SMAD308: an Interactive Design II course at James Madison University.</p>
+          </div>
+          <footer class="padding-footer">
+            <p> Website by Jessica Liu | Contact information: <a href="mailto:liu7jx@dukes.jmu.edu" style="text-decoration: none">liu7jx@dukes.jmu.edu</a></p>
+          </footer>
+        </div>
+    </body>
 </html>
